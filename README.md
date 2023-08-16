@@ -1,4 +1,4 @@
-**[Français](#PGen---Générateur-de-Pseudonymes-(Version-0.1))** - **[English](#pgen---pseudonym-generator-(version-0.1)))**
+**[Français](#pgen---g%C3%A9n%C3%A9rateur-de-pseudonymes-version-01)** - **[English](#pgen---pseudonym-generator-version-01)**
 
 # PGen - Générateur de Pseudonymes (Version 0.1)
 
