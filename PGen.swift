@@ -340,11 +340,14 @@ func originChoice() -> Origin? {
         case 6: return .french
         case 7: return .latino
         case 0: return nil
-        default: return nil
+        default:
+                    print("Choix non valide. Veuillez entrer un nombre entre 0 et 7.")
+                    return originChoice() // Appel récursif pour redemander le choix
         }
     }
     
-    return nil
+    print("Choix non valide. Veuillez entrer un nombre entre 0 et 7.")
+    return originChoice() // Appel récursif pour redemander le choix
 }
 
 
@@ -368,11 +371,15 @@ func genderChoice() -> Bool? {
 // Fonction pour executer le programme
 func main() {
     while true {
-        print("=== Générateur de Pseudo ===")
+        print("""
+              === Générateur de Pseudo ===
+              """)
         
         if let origin = originChoice() {
-            if origin == .arabic || origin == .asian {
-                print("Désolé, cette origine n'est pas prise en charge pour cette démo.")
+            let supportedOrigins: [Origin] = [.african, .ameridian, .arabic, .asian, .british, .french, .latino]
+
+            if !supportedOrigins.contains(origin) {
+                print("Désolé, il y a une erreur dans votre choix ou cette origine n'est pas prise en charge pour cette démo.")
                 continue
             }
             
@@ -384,7 +391,7 @@ func main() {
                 let genreLabel = isMale ? "masculin" : "féminin"
                 let origineLabel = origin.rawValue.capitalized
                 
-                print("Pseudo \(genreLabel) \(origineLabel) généré : \(generatedCustomPseudo)")
+                print("=== Pseudo \(genreLabel) \(origineLabel) généré : \(generatedCustomPseudo) ===")
             } else {
                 print("Choix de genre non valide.")
             }
