@@ -17,43 +17,236 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patrick O'Connor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHe-2b-sXU">
-                                <rect key="frame" x="16" y="59" width="361" height="645"/>
-                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="60"/>
-                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choisi l'inspiration pour ton pseudo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8H-pu-hlz">
+                                <rect key="frame" x="17.666666666666657" y="179" width="358" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="358" id="a5k-DZ-Lfo"/>
+                                    <constraint firstAttribute="height" constant="84" id="rWR-DX-mTj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="3" height="7"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Qp-1e-Ajr">
-                                <rect key="frame" x="69" y="700" width="275" height="100"/>
-                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaV-qB-p5v">
+                                <rect key="frame" x="13" y="293" width="117" height="33"/>
+                                <color key="backgroundColor" red="0.33333333329999998" green="0.93725490199999995" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="3uw-ek-V5X"/>
+                                    <constraint firstAttribute="width" constant="117" id="xUh-F3-CFd"/>
+                                </constraints>
                                 <color key="tintColor" name="AccentColor"/>
                                 <size key="titleShadowOffset" width="5" height="5"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Génerer un pseudo">
-                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
-                                    <color key="baseForegroundColor" systemColor="linkColor"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Britannia">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="changePseudo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UU7-jR-O8C"/>
+                                    <action selector="britishNames:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hWr-Cl-dxb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpH-PC-9JP">
+                                <rect key="frame" x="138" y="293" width="117" height="33"/>
+                                <color key="backgroundColor" red="0.33333333333333331" green="0.93725490196078431" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="SWx-eB-WqT"/>
+                                    <constraint firstAttribute="height" constant="33" id="fc7-UP-gyp"/>
+                                </constraints>
+                                <color key="tintColor" name="AccentColor"/>
+                                <size key="titleShadowOffset" width="5" height="5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cherokee">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="cherokeeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XfO-PW-8rv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSA-KP-vpQ">
+                                <rect key="frame" x="263" y="293" width="117" height="33"/>
+                                <color key="backgroundColor" red="0.33333333333333331" green="0.93725490196078431" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="2jb-rE-BM6"/>
+                                    <constraint firstAttribute="height" constant="33" id="sOv-kx-ayY"/>
+                                </constraints>
+                                <color key="tintColor" name="AccentColor"/>
+                                <size key="titleShadowOffset" width="5" height="5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Futuriste">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="futuristeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wn5-ON-h1P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQo-34-P3h">
+                                <rect key="frame" x="13" y="346" width="117" height="33"/>
+                                <color key="backgroundColor" red="0.33333333333333331" green="0.93725490196078431" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="7pd-a0-3RG"/>
+                                    <constraint firstAttribute="width" constant="117" id="aLw-Pb-wyy"/>
+                                </constraints>
+                                <color key="tintColor" name="AccentColor"/>
+                                <size key="titleShadowOffset" width="5" height="5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Gaullix">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="gaullixButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sD2-Ce-ChW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZD-lf-HZf">
+                                <rect key="frame" x="138" y="346" width="117" height="33"/>
+                                <color key="backgroundColor" red="0.33333333333333331" green="0.93725490196078431" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="Bdm-Ie-Qps"/>
+                                    <constraint firstAttribute="width" constant="117" id="tXZ-Z4-j33"/>
+                                </constraints>
+                                <color key="tintColor" name="AccentColor"/>
+                                <size key="titleShadowOffset" width="5" height="5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Hollywood">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="hollywoodButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NHZ-Ka-6or"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIV-kU-Hrx">
+                                <rect key="frame" x="263" y="346" width="117" height="33"/>
+                                <color key="backgroundColor" red="0.33333333333333331" green="0.93725490196078431" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="0PT-RU-Fyz"/>
+                                    <constraint firstAttribute="height" constant="33" id="DLp-ra-ERZ"/>
+                                </constraints>
+                                <color key="tintColor" name="AccentColor"/>
+                                <size key="titleShadowOffset" width="5" height="5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Latino">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="latinoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wzp-mU-ICR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N04-n4-wLL">
+                                <rect key="frame" x="13" y="399" width="117" height="33"/>
+                                <color key="backgroundColor" red="0.33333333333333331" green="0.93725490196078431" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="TEd-mv-aRc"/>
+                                    <constraint firstAttribute="height" constant="33" id="glL-32-lTp"/>
+                                </constraints>
+                                <color key="tintColor" name="AccentColor"/>
+                                <size key="titleShadowOffset" width="5" height="5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Manga">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="mangaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aqH-x3-uqu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Z6-0h-daE">
+                                <rect key="frame" x="138" y="399" width="117" height="33"/>
+                                <color key="backgroundColor" red="0.33333333329999998" green="0.93725490199999995" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="AeC-tK-03S"/>
+                                    <constraint firstAttribute="height" constant="33" id="yNL-Wm-ohR"/>
+                                </constraints>
+                                <color key="tintColor" name="AccentColor"/>
+                                <size key="titleShadowOffset" width="5" height="5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Marvel">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="marvelButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HIY-ia-J13"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWT-zd-oJu">
+                                <rect key="frame" x="263" y="399" width="117" height="33"/>
+                                <color key="backgroundColor" red="0.33333333329999998" green="0.93725490199999995" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="Pnr-Jd-ljl"/>
+                                    <constraint firstAttribute="height" constant="33" id="zaB-SE-hNT"/>
+                                </constraints>
+                                <color key="tintColor" name="AccentColor"/>
+                                <size key="titleShadowOffset" width="5" height="5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Thrones">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="thronesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Wd-2L-A3K"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PGen 0.1.1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4F-SQ-GBy">
+                                <rect key="frame" x="69" y="79" width="255" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Haj-I6-xX1"/>
+                                    <constraint firstAttribute="width" constant="255" id="gdF-l5-6c0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patrick O'Connor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHe-2b-sXU">
+                                <rect key="frame" x="17" y="482" width="359" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="359" id="uQe-Ha-bGx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="60"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" systemColor="labelColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="tintColor"/>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.79607843137254897" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Qp-1e-Ajr" secondAttribute="trailing" constant="49" id="5QW-xU-pae"/>
-                            <constraint firstItem="EHe-2b-sXU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="EzR-tV-GYM"/>
-                            <constraint firstItem="1Qp-1e-Ajr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="Iod-HB-ySZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EHe-2b-sXU" secondAttribute="bottom" constant="114" id="PSV-6F-lGw"/>
-                            <constraint firstItem="EHe-2b-sXU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Z3W-Nd-20O"/>
-                            <constraint firstItem="1Qp-1e-Ajr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="641" id="lfz-yB-EAe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1Qp-1e-Ajr" secondAttribute="bottom" constant="18" id="oBP-em-N1z"/>
-                            <constraint firstItem="EHe-2b-sXU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="qkO-ci-2c8"/>
+                            <constraint firstItem="2Z6-0h-daE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1F7-4t-3fY"/>
+                            <constraint firstItem="pSA-KP-vpQ" firstAttribute="top" secondItem="D8H-pu-hlz" secondAttribute="bottom" constant="30" id="4sP-8E-ekJ"/>
+                            <constraint firstItem="2Z6-0h-daE" firstAttribute="top" secondItem="jZD-lf-HZf" secondAttribute="bottom" constant="20" id="5SD-HY-Efi"/>
+                            <constraint firstItem="EHe-2b-sXU" firstAttribute="top" secondItem="N04-n4-wLL" secondAttribute="bottom" constant="50" id="5dY-ry-f6D"/>
+                            <constraint firstItem="ZQo-34-P3h" firstAttribute="top" secondItem="iaV-qB-p5v" secondAttribute="bottom" constant="20" id="96x-an-Jr4"/>
+                            <constraint firstItem="vpH-PC-9JP" firstAttribute="top" secondItem="D8H-pu-hlz" secondAttribute="bottom" constant="30" id="AIu-7v-FKG"/>
+                            <constraint firstItem="MWT-zd-oJu" firstAttribute="top" secondItem="YIV-kU-Hrx" secondAttribute="bottom" constant="20" id="FGe-yy-aUh"/>
+                            <constraint firstItem="EHe-2b-sXU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Iuv-SQ-Q0S"/>
+                            <constraint firstItem="2Z6-0h-daE" firstAttribute="top" secondItem="jZD-lf-HZf" secondAttribute="bottom" constant="20" id="MTA-W5-yz4"/>
+                            <constraint firstItem="YIV-kU-Hrx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="125" id="ORS-tP-LeO"/>
+                            <constraint firstItem="vpH-PC-9JP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QC6-EE-9am"/>
+                            <constraint firstItem="N04-n4-wLL" firstAttribute="top" secondItem="ZQo-34-P3h" secondAttribute="bottom" constant="20" id="R69-OW-exj"/>
+                            <constraint firstItem="D8H-pu-hlz" firstAttribute="top" secondItem="c4F-SQ-GBy" secondAttribute="bottom" constant="40" id="UCW-5h-MmH"/>
+                            <constraint firstItem="c4F-SQ-GBy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UDW-cs-yNg"/>
+                            <constraint firstItem="N04-n4-wLL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-125" id="XgK-Kk-jeX"/>
+                            <constraint firstItem="EHe-2b-sXU" firstAttribute="top" secondItem="MWT-zd-oJu" secondAttribute="bottom" constant="50" id="dLM-jk-zHd"/>
+                            <constraint firstItem="c4F-SQ-GBy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="hWX-Dc-h5H"/>
+                            <constraint firstItem="N04-n4-wLL" firstAttribute="top" secondItem="ZQo-34-P3h" secondAttribute="bottom" constant="20" id="kCn-Vm-oy8"/>
+                            <constraint firstItem="MWT-zd-oJu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="125" id="lcn-hS-Txo"/>
+                            <constraint firstItem="MWT-zd-oJu" firstAttribute="top" secondItem="YIV-kU-Hrx" secondAttribute="bottom" constant="20" id="mWZ-zD-Cut"/>
+                            <constraint firstItem="D8H-pu-hlz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="opC-wD-Il7"/>
+                            <constraint firstItem="ZQo-34-P3h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-125" id="qkD-FU-ETO"/>
+                            <constraint firstItem="YIV-kU-Hrx" firstAttribute="top" secondItem="pSA-KP-vpQ" secondAttribute="bottom" constant="20" id="r8j-ub-DUF"/>
+                            <constraint firstItem="iaV-qB-p5v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-125" id="s6v-kd-xV8"/>
+                            <constraint firstItem="iaV-qB-p5v" firstAttribute="top" secondItem="D8H-pu-hlz" secondAttribute="bottom" constant="30" id="smH-ey-CTu"/>
+                            <constraint firstItem="jZD-lf-HZf" firstAttribute="top" secondItem="vpH-PC-9JP" secondAttribute="bottom" constant="20" id="tY8-J6-XNv"/>
+                            <constraint firstItem="jZD-lf-HZf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tjK-dq-uEG"/>
+                            <constraint firstItem="pSA-KP-vpQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="125" id="zHu-Mq-eUZ"/>
+                            <constraint firstItem="iaV-qB-p5v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zRw-ES-uSV"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="inspirationLabel" destination="D8H-pu-hlz" id="O3P-bY-DL4"/>
                         <outlet property="pseudoLabel" destination="EHe-2b-sXU" id="dlm-kK-cPe"/>
                     </connections>
                 </viewController>
@@ -66,17 +259,8 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
